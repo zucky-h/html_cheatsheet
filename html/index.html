@@ -2,24 +2,1605 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML チートシート</title>
+        <link href="https://meyerweb.com/eric/tools/css/reset/reset200802.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css">
     </head>
 
-    <body>
-        <header>
-            <h1>HTML チートシート</h1>
+    <body class="bg-color">
+        <header class="bg-color1">
+            <h1 class="header_title">HTML Standard チートシート</h1>
         </header>
 
         <main>
-            <h2>htmlのタグリストが並ぶ↓</h2>
-            <div>
-
+            <!-- 要素集全体 -->
+            <div class="elements">
+                <!-- プリアンブル要素 -->
+                <div class="element bg-color2">
+                    <!-- プリアンブル要素コンテナ -->
+                    <div class="element_container">
+                        <!-- 要素タイトル -->
+                        <div class="element_type_title">
+                            <h2>プリアンブル</h2>
+                        </div>
+                        <!-- 要素リスト -->
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>!DOCTYPE</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>ドキュメントタイプの宣言をするタグ</p>
+                                        <p>使用例<pre><code>&lt;!DOCTYPE html&gt;</code></pre></p>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 文書要素 -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>文書要素</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>html</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>HTML文書で有ることを宣言するタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;html&gt;...&lt;/html&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 文書メタデータ -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>文書メタデータ</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>head</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>文書のヘッダ情報を示すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;head&gt;...&lt;/head&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>title</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>ブラウザのタグに表示されるタイトルをつけるタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;title&gt;...&lt;/title&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>base</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>相対パスの基準URLを指定するタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;base href="..." target="..."&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>link</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>関連文書ファイルを指定するタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;link rel="リンクタイプ" href="URI"&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>meta</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>文書のメタ情報を指定するタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;meta ...&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>style</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>スタイルシートを記述するタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;style&gt;...&lt;/style&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>        
+                <!-- セクション -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>セクション</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>body</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>文書の本体を表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;body&gt;...&lt;/body&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>article</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>記事を表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;article&gt;...&lt;/article&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>section</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>一般的なセクションを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;section&gt;...&lt;/section&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>nav</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>ナビゲーションを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;nav&gt;&lt;/nav&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>aside</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>補足、脚注等を表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;aside&gt;...&lt;/aside&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>h1</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>見出しを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;h1&gt;...&lt;/h1&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>h2</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>見出しを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;h2&gt;...&lt;/h2&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>h3</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>見出しを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;h&gt;...&lt;/h3&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>h4</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>見出しを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;h&gt;...&lt;h4&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>h5</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>見出しを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;h5&gt;...&lt;/h5&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>h6</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>見出しを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;h6&gt;...&lt;/h6&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>hgroup</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>h1-h6タグとpタグをグループ化するタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;hgrouop&gt;
+    &lt;h1&gt;...&lt;/h1&gt;
+    &lt;p&gt;...&lt;/p&gt;
+&lt;/hgrouop&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>header</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>ヘッダーを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;header&gt;...&lt;/header&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>footer</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>フッターを表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;footer&gt;...&lt;/footer&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>address</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>連絡先を表すタグ</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt;address&gt;...&lt;/address&gt;</code></pre>
+                                        <!-- <img src="" alt=""> -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            <div class="elements">
+                <!-- グルーピングコンテンツ -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>グルーピングコンテンツ</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>p</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>hr</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>pre</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>blockquote</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>ol</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>ul</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>menu</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>li</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>dl</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>dt</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>dd</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>figure</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>figcaption</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>main</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>div</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- フォーム -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>フォーム</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>form</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>label</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>input</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>button</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>select</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>datalist</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>optgroup</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>textarea</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>output</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>progress</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>meter</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>fieldset</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>legend</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 対話的な要素 -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>対話的な要素</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>details</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>summary</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>dialog</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="elements">
+                <!-- テキストレベルセマンティクス -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>テキストレベルセマンティクス</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>a</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>em</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>strong</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>small</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>s</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>cite</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p>q</p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>dfn</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>abbr</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>ruby</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>rt</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>rp</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>data</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>time</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>code</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>var</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>samp</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>kbd</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>sub</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>sup</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>i</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>b</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>u</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>mark</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>bdi</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>bdo</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>span</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>br</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>wbr</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 編集 -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>編集</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>ins</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>del</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            
+            <div class="elements">
+                <!-- 埋め込みコンテンツ -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>埋め込みコンテンツ</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>picture</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>source</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>img</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>iframe</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>embed</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>object</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>video</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>audio</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>track</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>map</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>area</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- テーブルデータ -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>テーブルデータ</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>table</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>caption</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>colgroup</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>col</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>tbody</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>thead</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>tfoot</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>tr</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>td</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>th</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- スクリプティング -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>スクリプティング</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>script</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>noscript</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>template</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>slot</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>canvas</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- その他 -->
+                <div class="element bg-color2">
+                    <div class="element_container">
+                        <div class="element_type_title">
+                            <h2>その他</h2>
+                        </div>
+                        <div class="element-type_list">
+                            <ul>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>svg</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>acronym</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>applet</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                                <li class="tag">
+                                    <button class="tag_title">
+                                        <h3>テキスト</h3>
+                                        <div class="up-down"></div>
+                                    </button>
+                                    <div class="tag_detail">
+                                        <p></p>
+                                        <p>使用例</p>
+                                        <pre><code>&lt; html&gt;</code></pre>
+                                        <img src="" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </main>
 
-        <footer>
-            <p>特になくていいかな？</p>
-        </footer>
+<!-- タグリストのフォーマット 
+要素全体
+<div class="element bg-color2">
+    要素コンテナ
+    <div class="element_container">
+        要素タイトル
+        <div class="element_type_title">
+            <h2>プリアンブル</h2>
+        </div>
+        要素リスト
+        <div class="element-type_list">
+            <ul>
+                <li class="tag">
+                    タグの名称
+                    <button class="tag_title">
+                        <h3>!DOCTYPE</h3>
+                        <div class="up-down"></div>
+                    </button>
+                    タグの詳細
+                    <div class="tag_detail">
+                        <p>ドキュメントタイプの宣言をする</p>
+                        <p>使用例</p>
+                        <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+                        <img src="" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+-->
 
+        <footer class="bg-color1">
+            <p>特になくていいかな？</p>
+            <p>参考にしたサイトのリンクとコピーライトは書く</p>
+        </footer>
+        
+        <script src="../javascript/accordion.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
     </body>
 </html>

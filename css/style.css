@@ -1,1 +1,120 @@
+/* カラーパレット 
+メイン
+#fffffe
+ヘッダー、フッター、要素ボックス
+#eff0f3
+2th
+#bae8e8
+3th
+#e3f6f5
+文字(できれば)
+#272343
+*/
 
+.bg-color{
+    background-color: #fffffe;
+}
+.bg-color1{
+    background-color: #eff0f3;
+}
+.bg-color2{
+    background-color: #bae8e8;
+}
+.bg-color3{
+    background-color: #e3f6f5;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header_title{
+    margin: 10px;
+}
+
+.elements{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.element{
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+/* .elements1, .elements2, .elements3, .elements4{
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.element_container{
+    margin: 10px;
+}
+
+.tag_title{
+    width: 100%;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.tag_title:hover,
+.tag_title:active,
+.tag_title.is-active{
+    background-color: #e3f6f5;
+}
+
+.tag_detail{
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.tag_detail.is-open{
+    background-color: #e3f6f5;
+    border: 1px solid black;
+    padding: 10px;
+    height: auto;
+    line-height: normal;
+    opacity: 1;
+}
+
+
+footer{
+    width: 100%;
+    height: 80px;
+}
