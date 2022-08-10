@@ -58,6 +58,12 @@ main{
     margin: 10px;
 }
 
+.elements-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
 .elements{
     width: 90%;
     display: flex;
@@ -70,15 +76,8 @@ main{
     width: 90%;
     height: auto;
     margin-bottom: 10px;
+    
 }
-/* .elements1, .elements2, .elements3, .elements4{
-    height: auto;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-} */
 
 .element_container{
     margin: 10px;
@@ -117,4 +116,18 @@ main{
 footer{
     width: 100%;
     height: 80px;
+}
+
+@media screen and (max-width: 1280px) {
+    .elements-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
 }
