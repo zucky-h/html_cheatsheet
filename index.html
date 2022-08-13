@@ -1251,9 +1251,13 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>画像に関する宣言的コントロールを許可するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;picture&gt;
+    &lt;source srcset="..."&gt;
+    &lt;source srcset="..."&gt;
+    &lt;img src="..." alt="..."&gt;
+&lt;/picture&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1263,9 +1267,13 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>親のpictureまたはメディア要素に対するソース提供またはimgタグに対する大替ソースセットを表すタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;picture&gt;
+    &lt;source srcset="..."&gt;
+    &lt;source srcset="..."&gt;
+    &lt;img src="..." alt="..."&gt;
+&lt;/picture&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1275,9 +1283,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>画像を表示するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;img src="..." alt="..."&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1287,9 +1295,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>インラインフレームを作成するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;iframe width="..." height="..."&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1299,9 +1307,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>プラグインデータを埋め込むタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;embed&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1311,9 +1319,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>文書に外部リソース(全般)を埋め込むタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;object&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1323,9 +1331,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>動画を再生するタグ(メディア要素)</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;video src="..."&gt;&lt;/video&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1335,9 +1343,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>音声を再生するタグ(メディア要素)</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;audio src="..."&gt;&lt;/audio&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1347,9 +1355,12 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>メディア要素の子としてテキストトラックを指定するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;audio src="..."&gt;
+                                                &lt;track ...&gt;
+                                                &lt;/audio&gt;
+                                            </code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1359,9 +1370,12 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>イメージマップを作成するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;map name="..."&gt;
+    &lt;area ...&gt;
+    &lt;area ...&gt;
+&lt;/map&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1371,9 +1385,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>イメージマップのハイパーリンク領域を設定する</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;area href="..." shape="..." coords="..,..,..,.."&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1396,9 +1410,18 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>テーブルを作成するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1408,9 +1431,19 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>テーブルにキャプションをつけるタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+    &lt;caption&gt;...&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1420,9 +1453,20 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>表の縦列をグループ化する</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+    &lt;colgroup span="1" ...&gt;
+    &lt;calgroup span="1" ...&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1432,9 +1476,22 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>colgroup内でテーブルの縦列の属性を指定するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col span="1" ...&gt;
+        &lt;col span="1" ...&gt;
+    &lt;/calgroup&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1444,9 +1501,32 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>テーブルのボディ部分を定義するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col span="1" ...&gt;
+        &lt;col span="1" ...&gt;
+    &lt;/calgroup&gt;
+    &lt;thead&gt;
+        &lt;/tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;/tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;/tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1456,9 +1536,32 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>テーブルのヘッダー部分を定義するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col span="1" ...&gt;
+        &lt;col span="1" ...&gt;
+    &lt;/calgroup&gt;
+    &lt;thead&gt;
+        &lt;/tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;/tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;/tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1468,9 +1571,32 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>テーブルのフッター部分を定義するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+        &lt;colgroup&gt;
+        &lt;col span="1" ...&gt;
+        &lt;col span="1" ...&gt;
+    &lt;/calgroup&gt;
+    &lt;thead&gt;
+        &lt;/tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;/tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;/tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1480,9 +1606,18 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>テーブルの横1行を定義するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1492,9 +1627,18 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>テーブルのデータセルを作成するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1504,9 +1648,18 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>テーブルの見出しセルを作成するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;...&lt;/th&gt;
+        &lt;th&gt;...&lt;/th&gt;
+    &lt;/tr&gt;                                               
+&lt;/table&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1529,9 +1682,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>JavaScriptなどのスクリプトを組み込むタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;script&gt;...&lt;/script&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1541,9 +1694,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>スクリプトが動作しない環境用の表示内容を指定するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;noscript&gt;...&lt;/noscript&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1553,9 +1706,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>スクリプトによって文書に挿入できるHTMLの断片を宣言するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;template id="..."&gt;...&lt;/template&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1565,9 +1718,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>スロットを定義するタグ(ウェブコンポーネント)</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;slot name="..."&gt;...&lt;/slot&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1577,9 +1730,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>図形を描くタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;canvas&gt;...&lt;/canvas&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1602,9 +1755,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>図形を描画するタグ</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;svg&gt;...&lt;/svg&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1614,9 +1767,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>略語を表すタグ(HTML5でabbrに統一された)</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;acronym&gt;...&lt;/acronym&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1626,9 +1779,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>Javaアプレットを文書に挿入するためのタグ(HTML5で廃止)</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;applet&gt;...&lt;/applet&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
@@ -1638,9 +1791,9 @@
                                             <div class="up-down"></div>
                                         </button>
                                         <div class="tag_detail">
-                                            <p></p>
+                                            <p>要素を持たないテキスト</p>
                                             <p>使用例</p>
-                                            <pre><code>&lt;&gt;...&lt;/&gt;</code></pre>
+                                            <pre><code>&lt;p&gt;テキスト&lt;/p&gt;</code></pre>
                                             <!-- <img src="" alt=""> -->
                                         </div>
                                     </li>
